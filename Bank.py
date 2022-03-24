@@ -8,7 +8,7 @@ class ATM:
      return ATM.balance
 
    def withdraw(amount):
-        if ATM.balance >= amount:
+        if ATM.balance > amount:
             print("Withdrawing $" + str(amount))
             ATM.balance -= amount
             print("Your new balance is: $" + str(ATM.balance))
